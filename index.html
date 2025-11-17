@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Self-Assessment: Ist mein Use Case ein AI Use Case?</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Self‑Assessment: Ist mein Use Case ein AI Use Case?</h1>
+    <p class="lead">Beantworte die folgenden Fragen, um eine Einschätzung zu bekommen, ob dein Use Case sinnvollerweise mit KI gelöst werden sollte.</p>
+
+    <form id="assessment">
+      <div id="questions"></div>
+
+      <div class="actions">
+        <button type="button" id="evaluate">Einschätzung berechnen</button>
+        <button type="button" id="export">Antworten exportieren (JSON)</button>
+        <button type="button" id="reset">Zurücksetzen</button>
+      </div>
+    </form>
+
+    <section id="result" class="hidden">
+      <h2>Ergebnis</h2>
+      <p id="scoreText"></p>
+      <div id="explanation"></div>
+      <h3>Konkrete nächste Schritte</h3>
+      <ul id="nextSteps"></ul>
+    </section>
+
+    <footer>
+      <small>Made with ♥ — SelfAssessment v1.0</small>
+    </footer>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
